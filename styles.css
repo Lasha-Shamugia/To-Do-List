@@ -1,0 +1,26 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+  padding: 0;
+  background-color: #f9f9f9;
+}
+h1 {
+  color: #333;
+}
+.todo-list {
+  list-style: none;
+  padding: 0;
+}
+.todo-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  font-size: 18px;
+}
+.todo-item input[type="checkbox"] {
+  margin-right: 20px;
+}
+.done {
+  text-decoration: line-through;
+  color: #888;
+}
