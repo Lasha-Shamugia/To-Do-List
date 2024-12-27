@@ -3,13 +3,81 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>To-Do List - Lasha Shamugia</title>
-    <link rel="stylesheet" href="./styles.css" />
+    <title>To Do List - Lasha Shamugia</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 30px;
+      }
+      .todo-list {
+        list-style: none;
+        padding: 0;
+      }
+      .todo-item {
+        width: 41%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 10px;
+        font-size: 18px;
+        padding: 5px 10px;
+        background: #fff;
+        border: 1px solid #ddd;
+        border-radius: 4px;
+      }
+      .todo-item input[type="checkbox"] {
+        margin-right: 10px;
+      }
+      .todo-item .text {
+        flex-grow: 1;
+      }
+      .todo-item .delete-button {
+        background-color: #ae1010;
+        color: white;
+        border: none;
+        padding: 5px 10px;
+        cursor: pointer;
+        border-radius: 4px;
+        margin-left: 10px;
+      }
+      .todo-item .delete-button:hover {
+        background-color: #cc0000;
+      }
+      .done {
+        text-decoration: line-through;
+        color: #b1abab;
+      }
+      .add-item-container {
+        margin-top: 20px;
+      }
+      .add-item-container input[type="text"] {
+        width: 33%;
+        padding: 8px;
+        font-size: 16px;
+        margin-right: 10px;
+      }
+      .add-item-container button {
+        padding: 8px 16px;
+        font-size: 16px;
+        background-color: #0071ea;
+        color: #fff;
+        border: none;
+        cursor: pointer;
+        border-radius: 4px;
+      }
+      .add-item-container button:hover {
+        background-color: #004a98;
+      }
+    </style>
   </head>
   <body>
-    <h1>Supermarket to do List</h1>
+    <h1>To do List</h1>
     <ul id="todo-list" class="todo-list"></ul>
-  
+    <div class="add-item-container">
+      <input id="new-item-input" type="text" placeholder="Add new product..." />
+      <button id="add-item-button">Add</button>
+    </div>
+
     <script src="main.js"></script>
   </body>
 </html>
